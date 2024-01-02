@@ -13,8 +13,8 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "fundhubdev.local" # host name
-    - "fundhubdev.dashboard.local" # host name
+    - "fundhubdev.titanio.xyz" # host name
+    - "fundhubdev.dashboard.titanio.xyz" # host name
 ---
 
 apiVersion: networking.istio.io/v1alpha3
@@ -32,7 +32,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "fundhubdev.api.local" # host name
+    - "fundhubdev.api.titanio.xyz" # host name
 ---
 
 apiVersion: networking.istio.io/v1alpha3
@@ -50,6 +50,6 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "weavedev.monitoring.local"
-    - "grafanadev.monitoring.local" # host name
-    - "kialidev.monitoring.local"
+    - "weavedev.titanio.xyz"
+    - "grafanadev.titanio.xyz" # host name
+    - "kialidev.titanio.xyz"

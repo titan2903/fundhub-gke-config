@@ -4,7 +4,7 @@ metadata:
   name: virtual-service-fe
 spec:
   hosts:
-  - "fundhubdev.local"
+  - "fundhubdev.titanio.xyz"
   gateways:
   - frontend-gateway
   http:
@@ -20,7 +20,7 @@ metadata:
   name: virtual-service-fe-dashboard
 spec:
   hosts:
-  - "fundhubdev.dashboard.local"
+  - "fundhubdev.dashboard.titanio.xyz"
   gateways:
   - frontend-gateway
   http:
@@ -36,7 +36,7 @@ metadata:
   name: virtual-service-be
 spec:
   hosts:
-  - "fundhubdev.api.local"
+  - "fundhubdev.api.titanio.xyz"
   gateways:
   - backend-gateway
   http:
@@ -52,7 +52,7 @@ metadata:
   name: virtual-service-grafana
 spec:
   hosts:
-  - "grafanadev.monitoring.local"
+  - "grafanadev.titanio.xyz"
   gateways:
   - monitoring-gateway
   http:
@@ -68,7 +68,7 @@ metadata:
   name: virtual-service-weave
 spec:
   hosts:
-  - "weavedev.monitoring.local"
+  - "weavedev.titanio.xyz"
   gateways:
   - monitoring-gateway
   http:
@@ -86,7 +86,7 @@ metadata:
   name: virtual-service-kiali
 spec:
   hosts:
-  - "kialidev.monitoring.local"
+  - "kialidev.titanio.xyz"
   gateways:
   - monitoring-gateway
   http:
