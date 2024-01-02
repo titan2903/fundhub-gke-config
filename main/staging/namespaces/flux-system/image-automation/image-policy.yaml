@@ -1,0 +1,32 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: fundhub-api-dev
+spec:
+  imageRepositoryRef:
+    name: fundhub-api-dev
+  policy:
+    numerical:
+      order: asc
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: fundhub-client-dev
+spec:
+  imageRepositoryRef:
+    name: fundhub-client-dev
+  policy:
+    numerical:
+      order: asc
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: fundhub-dashboard-dev
+spec:
+  imageRepositoryRef:
+    name: fundhub-dashboard-dev
+  policy:
+    numerical:
+      order: asc

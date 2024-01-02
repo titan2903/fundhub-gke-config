@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fundhub-dashboard-dev
+spec:
+  selector:
+    matchLabels:
+      app: fundhub-dashboard-dev
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fundhub-dashboard-dev
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: fundhub-dashboard-dev
+          image: titan29/fundhub-dashboard-dev:2 # {"$imagepolicy": "flux-system:fundhub-dashboard-dev"}
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+            requests:
+              memory: "68Mi"
+              cpu: "10m"
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: fundhub-dashboard-config
