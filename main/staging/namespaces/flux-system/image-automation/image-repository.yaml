@@ -1,0 +1,29 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: fundhub-api-dev
+spec:
+  image: titan29/fundhub-api-dev
+  interval: 1m
+  secretRef:
+    name: regcred
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: fundhub-client-dev
+spec:
+  image: titan29/fundhub-client-dev
+  interval: 1m
+  secretRef:
+    name: regcred
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: fundhub-dashboard-dev
+spec:
+  image: titan29/fundhub-dashboard-dev
+  interval: 1m
+  secretRef:
+    name: regcred

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fundhub-client-dev
+spec:
+  selector:
+    matchLabels:
+      app: fundhub-client-dev
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fundhub-client-dev
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: fundhub-client-dev
+          image: titan29/fundhub-client-dev:2 # {"$imagepolicy": "flux-system:fundhub-client-dev"}
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "100m"
+            requests:
+              memory: "128Mi"
+              cpu: "10m"
+          ports:
+            - containerPort: 3060
+          envFrom:
+            - configMapRef:
+                name: fundhub-client-config
