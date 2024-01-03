@@ -36,7 +36,7 @@ metadata:
   name: virtual-service-be
 spec:
   hosts:
-  - "fundhubdev.api.titanio.xyz"
+  - "fundhubdevapi.titanio.xyz"
   gateways:
   - backend-gateway
   http:

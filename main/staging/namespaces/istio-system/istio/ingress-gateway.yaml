@@ -32,7 +32,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "fundhubdev.api.titanio.xyz" # host name
+    - "fundhubdevapi.titanio.xyz" # host name
 ---
 
 apiVersion: networking.istio.io/v1alpha3
