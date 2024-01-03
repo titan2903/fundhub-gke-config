@@ -14,7 +14,7 @@ spec:
       protocol: HTTP
     hosts:
     - "fundhubdev.titanio.xyz" # host name
-    - "fundhubdev.dashboard.titanio.xyz" # host name
+    - "fundhubdevdashboard.titanio.xyz" # host name
 ---
 
 apiVersion: networking.istio.io/v1alpha3

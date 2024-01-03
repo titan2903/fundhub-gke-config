@@ -20,7 +20,7 @@ metadata:
   name: virtual-service-fe-dashboard
 spec:
   hosts:
-  - "fundhubdev.dashboard.titanio.xyz"
+  - "fundhubdevdashboard.titanio.xyz"
   gateways:
   - frontend-gateway
   http:
