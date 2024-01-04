@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fundhub-client-config
+data:
+  PORT: "3010"
+  HOST: "0.0.0.0"

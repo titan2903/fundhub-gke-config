@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fundhub-client-v2
+spec:
+  selector:
+    matchLabels:
+      app: fundhub-client
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fundhub-client
+        version: "2.0"
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: fundhub-client
+          image: titan29/fundhub-client:2
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "100m"
+            requests:
+              memory: "128Mi"
+              cpu: "10m"
+          ports:
+            - containerPort: 3010
+          envFrom:
+            - configMapRef:
+                name: fundhub-client-config
