@@ -7,6 +7,7 @@ resources:
   - deployment-v2.yaml
   - destinationrule.yaml
   - virtual-service.yaml
+  - hpa.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
