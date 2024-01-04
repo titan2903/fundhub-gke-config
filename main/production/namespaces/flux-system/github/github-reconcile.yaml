@@ -4,7 +4,7 @@ metadata:
   name: github-status
 spec:
   type: github
-  address: https://github.com/titan2903/fundhub-k8s-config.git
+  address: https://github.com/titan2903/fundhub-gke-config.git
   secretRef:
     name: github-token
 ---
