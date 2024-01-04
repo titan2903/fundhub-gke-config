@@ -44,4 +44,4 @@ spec:
             app.kubernetes.io/component: monitoring
     grafana:
       defaultDashboardsEnabled: false
-      adminPassword: Zmx1eA==
+      adminPassword: flux
