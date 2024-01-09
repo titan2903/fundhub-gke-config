@@ -5,10 +5,10 @@ resources:
   - deployment.yaml
   - service.yaml
   - configmap.yaml
+  - hpa.yaml
   - destinationrule.yaml
   - virtual-service.yaml
   - deployment-v2.yaml
-  - hpa.yaml
 
 generatorOptions:
   disableNameSuffixHash: true

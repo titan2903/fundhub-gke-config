@@ -6,7 +6,6 @@ spec:
   selector:
     matchLabels:
       app: fundhub-dashboard
-  replicas: 1
   template:
     metadata:
       labels:
@@ -17,7 +16,7 @@ spec:
         - name: regcred
       containers:
         - name: fundhub-dashboard
-          image: titan29/fundhub-dashboard:4
+          image: titan29/fundhub-dashboard:2
           resources:
             limits:
               memory: "128Mi"
